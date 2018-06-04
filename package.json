@@ -1,0 +1,18 @@
+{
+  "name": "medusa",
+  "version": "1.0.0",
+  "description": "Node.js API Server",
+  "author": "Mathew Thomas <mathew.thomas@longdivision.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "request": "2.85.0",
+    "axios": "0.18.0",
+    "pg": "7.4.3",
+    "socket.io": "2.1.1",
+    "lodash": "4.17.5"
+  }
+}
