@@ -1,4 +1,4 @@
-FROM node:8.11.1-alpine
+FROM node:8.11.2-alpine
 RUN apk --update add postgresql-client && rm -rf /var/cache/apk/*
 
 # Create app directory
@@ -15,8 +15,8 @@ RUN npm install
 
 # Bundle app source
 # COPY . .
-# ADD src /usr/src/app/src
+ADD src /usr/src/app/src
 
-EXPOSE 8888
+EXPOSE 8080
 
 CMD [ "npm", "start" ]
